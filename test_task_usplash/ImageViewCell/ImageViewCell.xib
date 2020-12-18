@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="377" id="L1h-4B-xgN" customClass="ImageViewCell" customModule="test_task_usplash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="377"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L1h-4B-xgN" id="dFP-Uj-gL1">
+                <rect key="frame" x="0.0" y="0.0" width="263" height="377"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tLY-g6-OMr">
+                        <rect key="frame" x="31.5" y="95" width="200" height="243.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cz6-aK-UxT">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="71n-oa-2h9"/>
+                                    <constraint firstAttribute="width" constant="200" id="VpG-pC-ped"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Zs-k3-TXq">
+                                <rect key="frame" x="0.0" y="204" width="200" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="gf3-0I-mKb"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r99-Df-vIn">
+                                <rect key="frame" x="0.0" y="223" width="200" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOP-zU-mBO">
+                        <rect key="frame" x="56.5" y="50" width="150" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2XZ-rA-wpp"/>
+                            <constraint firstAttribute="width" constant="150" id="wVe-xj-xyM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qk2-L0-tDE">
+                        <rect key="frame" x="96.5" y="5" width="70" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="lOK-Xr-ven"/>
+                            <constraint firstAttribute="height" constant="40" id="nIk-Ju-JJW"/>
+                        </constraints>
+                        <state key="normal" title="Save it!"/>
+                        <connections>
+                            <action selector="downloadPressed:" destination="L1h-4B-xgN" eventType="touchUpInside" id="c6G-ig-OkY"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="zOP-zU-mBO" firstAttribute="centerX" secondItem="dFP-Uj-gL1" secondAttribute="centerX" id="7Mo-Bj-Pta"/>
+                    <constraint firstItem="zOP-zU-mBO" firstAttribute="top" secondItem="qk2-L0-tDE" secondAttribute="bottom" constant="5" id="JXz-Mj-cpf"/>
+                    <constraint firstItem="qk2-L0-tDE" firstAttribute="centerX" secondItem="dFP-Uj-gL1" secondAttribute="centerX" id="UBi-d3-Ue4"/>
+                    <constraint firstItem="tLY-g6-OMr" firstAttribute="centerX" secondItem="dFP-Uj-gL1" secondAttribute="centerX" id="eM7-da-mjf"/>
+                    <constraint firstItem="tLY-g6-OMr" firstAttribute="top" secondItem="zOP-zU-mBO" secondAttribute="bottom" constant="5" id="hk3-6n-KrS"/>
+                    <constraint firstItem="qk2-L0-tDE" firstAttribute="top" secondItem="dFP-Uj-gL1" secondAttribute="top" constant="5" id="oV9-pw-tdo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Wo0-SC-9wu"/>
+            <connections>
+                <outlet property="downloadPressedLabel" destination="qk2-L0-tDE" id="usF-vs-P0D"/>
+                <outlet property="downloadProgress" destination="3Zs-k3-TXq" id="yak-l8-iCl"/>
+                <outlet property="imageForCell" destination="cz6-aK-UxT" id="SeW-ki-3ll"/>
+                <outlet property="percentLabel" destination="r99-Df-vIn" id="mN4-zQ-V1i"/>
+                <outlet property="titleForImage" destination="zOP-zU-mBO" id="Xno-nV-15g"/>
+            </connections>
+            <point key="canvasLocation" x="-105.07246376811595" y="-9.0401785714285712"/>
+        </tableViewCell>
+    </objects>
+</document>
