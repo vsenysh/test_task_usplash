@@ -67,7 +67,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		36E1653E258D350800703AB5 /* sources */ = {
+		36E1653E258D350800703AB5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				36835C6D258BB0E200E9BC46 /* Extensions */,
@@ -76,7 +76,7 @@
 				36E7DC2F258B70E300F0F3A7 /* Assets.xcassets */,
 				36E7DC31258B70E300F0F3A7 /* LaunchScreen.storyboard */,
 			);
-			path = sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		36E16540258D354100703AB5 /* Controllers */ = {
@@ -88,11 +88,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		36E16545258D37CA00703AB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				36E7DC3B258B712A00F0F3A7 /* Model */,
+				360809C7258B9DAC00B35AC1 /* Views */,
+				36E16540258D354100703AB5 /* Controllers */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		36E7DC1A258B70E000F0F3A7 = {
 			isa = PBXGroup;
 			children = (
 				36E7DC25258B70E000F0F3A7 /* test_task_usplash */,
-				36E7DC34258B70E300F0F3A7 /* Info.plist */,
 				36E7DC24258B70E000F0F3A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,10 +117,9 @@
 		36E7DC25258B70E000F0F3A7 /* test_task_usplash */ = {
 			isa = PBXGroup;
 			children = (
-				36E16540258D354100703AB5 /* Controllers */,
-				360809C7258B9DAC00B35AC1 /* Views */,
-				36E7DC3B258B712A00F0F3A7 /* Model */,
-				36E1653E258D350800703AB5 /* sources */,
+				36E16545258D37CA00703AB5 /* Resources */,
+				36E1653E258D350800703AB5 /* Sources */,
+				36E7DC34258B70E300F0F3A7 /* Info.plist */,
 			);
 			path = test_task_usplash;
 			sourceTree = "<group>";
@@ -352,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86657AMSZL;
-				INFOPLIST_FILE = test_task_usplash/Info.plist;
+				INFOPLIST_FILE = /Users/vasylsenyshyn/Documents/test_task_usplash/test_task_usplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86657AMSZL;
-				INFOPLIST_FILE = test_task_usplash/Info.plist;
+				INFOPLIST_FILE = /Users/vasylsenyshyn/Documents/test_task_usplash/test_task_usplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
